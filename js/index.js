@@ -5,11 +5,12 @@ const resultMessage = document.querySelector("#resultMessage");
 
 // Um evento que ativa após a submissão do form 
 emailForm.addEventListener("submit", function (event) {
-    event.proventDefault();
+    event.preventDefault();
 
     const email = emailInput.value
 
     // validar e-mail
+
     const isValid = validateEmail(email);
 
     if (isValid) {
