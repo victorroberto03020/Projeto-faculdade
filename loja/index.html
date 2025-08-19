@@ -1,0 +1,111 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proposta Ágil — App de Entrega de Comida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Empresa Y — Proposta Ágil</h1>
+      <nav class="nav">
+        <a href="#backlog">Product Backlog</a>
+        <a href="#sprints">Sprint Backlog</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container text-center">
+      <h2>Aplicativo de Entrega de Comida com Métodos Ágeis</h2>
+      <p>Nossa proposta é guiar a Empresa Y no desenvolvimento do app de delivery usando Scrum, garantindo entregas rápidas, priorização de valor e adaptação contínua.</p>
+    </div>
+  </section>
+
+  <!-- Product Backlog -->
+  <section id="backlog" class="section">
+    <div class="container">
+      <h2>📌 Product Backlog</h2>
+      <p>Lista priorizada de funcionalidades que trarão valor ao negócio. Total: 20 itens.</p>
+      <ol>
+        <li>Cadastro e login de usuários (Google, e-mail)</li>
+        <li>Gerenciamento de perfil e endereços</li>
+        <li>Busca de restaurantes por geolocalização</li>
+        <li>Filtros por tipo de comida/preço</li>
+        <li>Exibição de cardápio com fotos e descrições</li>
+        <li>Adicionar itens ao carrinho</li>
+        <li>Editar/remover itens do carrinho</li>
+        <li>Aplicação de cupons e descontos</li>
+        <li>Checkout com resumo de pedido</li>
+        <li>Pagamento via Pix</li>
+        <li>Pagamento via cartão de crédito</li>
+        <li>Confirmação de pedido com número de protocolo</li>
+        <li>Rastreamento do pedido em tempo real</li>
+        <li>Notificações push (status do pedido)</li>
+        <li>Avaliação de restaurantes e entregadores</li>
+        <li>Histórico de pedidos</li>
+        <li>Suporte via chat/FAQ</li>
+        <li>Dashboard para restaurantes (pedidos em andamento)</li>
+        <li>Dashboard para administrador (métricas gerais)</li>
+        <li>Configurações de segurança e privacidade</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Sprint Backlog -->
+  <section id="sprints" class="section alt-bg">
+    <div class="container">
+      <h2>🗂 Sprint Backlog</h2>
+      <p>Planejamento detalhado das primeiras 2 sprints (2 semanas cada), com tarefas técnicas derivadas do Product Backlog.</p>
+
+      <div class="card">
+        <h3>Sprint 1 — Foco: Cadastro & Login + Infra inicial</h3>
+        <ul>
+          <li>Configuração de repositório e pipeline CI/CD</li>
+          <li>Configuração de banco de dados (usuários, endereços)</li>
+          <li>Implementar cadastro de usuários (e-mail, Google)</li>
+          <li>Implementar login e autenticação (JWT)</li>
+          <li>Criação da tela inicial (onboarding)</li>
+          <li>Testes unitários e integração para autenticação</li>
+          <li>Deploy inicial em ambiente de homologação</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Sprint 2 — Foco: Restaurantes & Cardápio</h3>
+        <ul>
+          <li>Criar API para listagem de restaurantes</li>
+          <li>Implementar busca com geolocalização</li>
+          <li>Filtros por categoria e faixa de preço</li>
+          <li>Exibir cardápio de restaurantes (nome, descrição, foto, preço)</li>
+          <li>Adicionar itens ao carrinho</li>
+          <li>Testes automatizados para fluxo de busca e cardápio</li>
+          <li>Revisão de segurança e performance do backend</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section contact">
+    <div class="container text-center">
+      <h2>🚀 Pronto para começar?</h2>
+      <p>Entre em contato e receba uma proposta detalhada de roadmap ágil para o app de delivery.</p>
+      <a href="mailto:contato@empresay.com" class="btn">Solicitar Contato</a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    © <span id="year"></span> Empresa Y — Exemplo de Proposta Ágil
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

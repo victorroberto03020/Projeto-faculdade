@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #2a7b2a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #2a7b2a;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(90deg, #e6f4ea, #f8fdf8);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #111;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 15px auto 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Seções */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2a7b2a;
+}
+
+.section p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.section ol, .section ul {
+  padding-left: 20px;
+}
+
+.alt-bg {
+  background: #f0f4f0;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Contato */
+.contact {
+  background: #2a7b2a;
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #e0f2e0;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #2a7b2a;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #f1f1f1;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #666;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
