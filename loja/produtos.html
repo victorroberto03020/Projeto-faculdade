@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roda Esportiva 18" - AutoParts</title>
+  <title>Promoções - AutoParts</title>
   <link rel="stylesheet" href="prod-style.css">
   <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
@@ -12,120 +12,115 @@
   <header class="header">
     <div class="logo">AutoParts</div>
     <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="produtos.html">Produtos</a>
-      <a href="promoções.html">Promoções</a>
-      <a href="contato.html">Contato</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="promoções.html" class="active">Promoções</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
     </nav>
-    <div class="search">
-      <input type="text" placeholder="Buscar produtos...">
-      <button>🔍</button>
-    </div>
   </header>
 
-  <!-- Detalhes do Produto -->
-  <main class="produto-detalhe">
-    <div class="produto-imagem">
-      <img src="https://images.unsplash.com/photo-1607860108855-7f5b9a2e6f79?w=800" alt="Roda Esportiva 18">
+  <!-- ===== BARRA DE PESQUISA ===== -->
+  <section class="search-bar">
+    <input type="text" id="searchInput" placeholder="Pesquisar produto...">
+  </section>
+
+  <!-- ===== PRODUTOS ===== -->
+  <section class="produtos">
+    <!-- Categoria: Acessórios Externos -->
+    <div class="card" data-name="aerofólio esportivo">
+      <img src="img/aerofolio.jpg" alt="Aerofólio Esportivo">
+      <h3>Aerofólio Esportivo</h3>
+      <p class="preco">R$ 650,00</p>
+      <a href="#" class="btn">Comprar</a>
     </div>
 
-    <div class="produto-info">
-      <h1>Roda Esportiva 18"</h1>
-      <p class="preco">R$ 2.499,00</p>
-      <p class="descricao">
-        Roda esportiva aro 18, acabamento em liga leve com pintura especial.
-        Compatível com diversos modelos de veículos. Design moderno para quem busca estilo e performance.
-      </p>
-
-      <div class="acoes">
-        <label for="quantidade">Quantidade:</label>
-        <input type="number" id="quantidade" min="1" value="1">
-        <a href="#" class="btn">Adicionar ao Carrinho</a>
+    <div class="card" data-name="Som Automotivo">
+        <img src="https://images.unsplash.com/photo-1616764576744-d07db25a1cce?w=600" alt="Som Automotivo">
+        <h3>Kit Som Automotivo</h3>
+        <p class="preco">R$ 1.899,00</p>
+        <a href="#" class="btn">Comprar</a>
       </div>
 
-      <div class="avaliacoes">
-        <p>⭐⭐⭐⭐☆ (4.5 de 5) - 32 avaliações</p>
-        <a href="#">Ver todas as avaliações</a>
-      </div>
+    <div class="card" data-name="antena esportiva">
+      <img src="img/antena.jpg" alt="Antena Esportiva">
+      <h3>Antena Automotiva Esportiva</h3>
+      <p class="preco">R$ 90,00</p>
+      <a href="#" class="btn">Comprar</a>
     </div>
-  </main>
 
-  <!-- Produtos Relacionados -->
-  <section class="relacionados">
-    <h2>Você também pode gostar</h2>
-    <div class="grid">
-      <div class="card">
+    <div class="card" data-name="Roda Esportiva">
+        <img src="https://images.unsplash.com/photo-1607860108855-7f5b9a2e6f79?w=600" alt="Roda Esportiva">
+        <h3>Roda Esportiva 18"</h3>
+        <p class="preco">R$ 2.499,00</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+
+    <!-- Categoria: Iluminação -->
+    <div class="card" data-name="farol led">
+      <img src="img/farol-led.jpg" alt="Farol de LED">
+      <h3>Farol de LED</h3>
+      <p class="preco">R$ 300,00</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card" data-name="lanterna traseira led">
+      <img src="img/lanterna.jpg" alt="Lanterna Traseira LED">
+      <h3>Lanterna Traseira LED</h3>
+      <p class="preco">R$ 450,00</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <!-- Categoria: Som & Multimídia -->
+    <div class="card" data-name="central multimídia">
+      <img src="img/multimidia.jpg" alt="Central Multimídia">
+      <h3>Central Multimídia</h3>
+      <p class="preco">R$ 1.200,00</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card" data-name="Volante Esportivo">
         <img src="https://images.unsplash.com/photo-1599819149920-9465a5c8aaf1?w=600" alt="Volante Esportivo">
         <h3>Volante Esportivo</h3>
         <p class="preco">R$ 799,00</p>
         <a href="#" class="btn">Comprar</a>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1616764576744-d07db25a1cce?w=600" alt="Kit Som Automotivo">
-        <h3>Kit Som Automotivo</h3>
-        <p class="preco">R$ 1.899,00</p>
-        <a href="#" class="btn">Comprar</a>
-      </div>
+
+    <!-- Categoria: Segurança -->
+    <div class="card" data-name="alarme automotivo">
+      <img src="img/alarme.jpg" alt="Alarme Automotivo">
+      <h3>Alarme Automotivo</h3>
+      <p class="preco">R$ 350,00</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="card" data-name="rastreador gps">
+      <img src="img/rastreador.jpg" alt="Rastreador GPS">
+      <h3>Rastreador Veicular GPS</h3>
+      <p class="preco">R$ 500,00</p>
+      <a href="#" class="btn">Comprar</a>
     </div>
   </section>
 
-    <section class="produtos">
-        <h2>Iluminação</h2>
-        <div class="grid">
-            <div class="card">
-            <img src="https://images.unsplash.com/photo-1625772452856-6f5f7f7f7f7f?w=600" alt="Farol LED">
-            <h3>Farol de LED Alta Performance</h3>
-            <p class="preco">R$ 599,00</p>
-            <a href="#" class="btn">Comprar</a>
-            </div>
-            <div class="card">
-            <img src="https://images.unsplash.com/photo-1610441006373-6d6f6c6d6c6d?w=600" alt="Lanterna Traseira">
-            <h3>Lanterna Traseira em LED</h3>
-            <p class="preco">R$ 459,00</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-    </div>
-    </section>
+  <!-- ===== SCRIPT DE PESQUISA ===== -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".card");
 
-    <section class="produtos">
-    <h2>Som & Multimídia</h2>
-    <div class="grid">
-        <div class="card">
-        <img src="https://images.unsplash.com/photo-1623874972765-2f3f8d92a8a3?w=600" alt="Central Multimídia">
-        <h3>Central Multimídia Touchscreen</h3>
-        <p class="preco">R$ 2.199,00</p>
-        <a href="#" class="btn">Comprar</a>
-        </div>
-        <div class="card">
-        <img src="https://images.unsplash.com/photo-1617077257896-5ef3e92ce409?w=600" alt="Alto-Falante">
-        <h3>Alto-Falantes Pioneer 6x9</h3>
-        <p class="preco">R$ 899,00</p>
-        <a href="#" class="btn">Comprar</a>
-        </div>
-    </div>
-    </section>
+    searchInput.addEventListener("keyup", function () {
+      let filter = searchInput.value.toLowerCase();
 
-    <section class="produtos">
-    <h2>Segurança</h2>
-    <div class="grid">
-        <div class="card">
-        <img src="https://images.unsplash.com/photo-1619551733297-59f82bc5eac1?w=600" alt="Alarme Automotivo">
-        <h3>Alarme Automotivo com Controle</h3>
-        <p class="preco">R$ 499,00</p>
-        <a href="#" class="btn">Comprar</a>
-        </div>
-        <div class="card">
-        <img src="" alt="Rastreador GPS">
-        <h3>Rastreador Veicular GPS</h3>
-        <p class="preco">R$ 299,00</p>
-        <a href="#" class="btn">Comprar</a>
-        </div>
-    </div>
-    </section>
+      cards.forEach(card => {
+        let productName = card.getAttribute("data-name").toLowerCase();
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 AutoParts. Todos os direitos reservados.</p>
-  </footer>
+        if (productName.includes(filter)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
