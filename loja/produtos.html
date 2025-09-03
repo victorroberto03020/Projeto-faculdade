@@ -36,28 +36,35 @@
       <img src="img/aerofolio.jpg" alt="Aerofólio Esportivo">
       <h3>Aerofólio Esportivo</h3>
       <p class="preco">R$ 650,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <button  class="btn" onclick="addToCart('Aerofólio Esportivo', 650)">
+          Adicionar ao Carrinho
     </div>
 
     <div class="card" data-name="Som Automotivo">
         <img src="https://images.unsplash.com/photo-1616764576744-d07db25a1cce?w=600" alt="Som Automotivo">
         <h3>Kit Som Automotivo</h3>
-        <p class="preco">R$ 1.899,00</p>
-        <a href="#" class="btn">Comprar</a>
+        <p class="preco">R$ 764,15</p>
+        <button  class="btn" onclick="addToCart('Kit Som Automotivo', 764)">
+          Adicionar ao Carrinho
+        </button>
       </div>
 
     <div class="card" data-name="antena esportiva">
       <img src="img/antena.jpg" alt="Antena Esportiva">
       <h3>Antena Automotiva Esportiva</h3>
       <p class="preco">R$ 90,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <button  class="btn" onclick="addToCart('Antena Automotiva Esportiva', 90)">
+          Adicionar ao Carrinho
+      </button>
     </div>
 
     <div class="card" data-name="Roda Esportiva">
         <img src="https://images.unsplash.com/photo-1607860108855-7f5b9a2e6f79?w=600" alt="Roda Esportiva">
-        <h3>Roda Esportiva 18"</h3>
-        <p class="preco">R$ 2.499,00</p>
-        <a href="#" class="btn">Comprar</a>
+        <h3>Roda Esportiva 18</h3>
+        <p class="preco">R$ 990,00</p>
+        <button  class="btn" onclick="addToCart('Roda Esportiva 18', 990)">
+          Adicionar ao Carrinho
+        </button>
       </div>
 
     <!-- Categoria: Iluminação -->
@@ -65,29 +72,37 @@
       <img src="img/farol-led.jpg" alt="Farol de LED">
       <h3>Farol de LED</h3>
       <p class="preco">R$ 300,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <button  class="btn" onclick="addToCart('Farol de LED', 300)">
+          Adicionar ao Carrinho
+      </button>
     </div>
 
     <div class="card" data-name="lanterna traseira led">
       <img src="img/lanterna.jpg" alt="Lanterna Traseira LED">
       <h3>Lanterna Traseira LED</h3>
       <p class="preco">R$ 450,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <button  class="btn" onclick="addToCart('Lanterna Traseira LED', 450)">
+          Adicionar ao Carrinho
+      </button>
     </div>
 
     <!-- Categoria: Som & Multimídia -->
     <div class="card" data-name="central multimídia">
       <img src="img/multimidia.jpg" alt="Central Multimídia">
       <h3>Central Multimídia</h3>
-      <p class="preco">R$ 1.200,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <p class="preco">R$ 799,00</p>
+      <button  class="btn" onclick="addToCart('Central Multimídia', 799)">
+          Adicionar ao Carrinho
+      </button>
     </div>
 
     <div class="card" data-name="Volante Esportivo">
         <img src="https://images.unsplash.com/photo-1599819149920-9465a5c8aaf1?w=600" alt="Volante Esportivo">
         <h3>Volante Esportivo</h3>
-         <p class="preco">R$ 799,00</p>
-        <a href="#" class="btn">Comprar</a>
+         <p class="preco">R$ 559,00</p>
+        <button  class="btn" onclick="addToCart('Volante Esportivo', 559)">
+          Adicionar ao Carrinho
+        </button>
       </div>
 
     <!-- Categoria: Segurança -->
@@ -95,19 +110,34 @@
       <img src="img/alarme.jpg" alt="Alarme Automotivo">
       <h3>Alarme Automotivo</h3>
       <p class="preco">R$ 350,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <button  class="btn" onclick="addToCart('Alarme Automotivo', 350)">
+          Adicionar ao Carrinho
+      </button>
     </div>
 
     <div class="card" data-name="rastreador gps">
       <img src="img/rastreador.jpg" alt="Rastreador GPS">
       <h3>Rastreador Veicular GPS</h3>
-      <p class="preco">R$ 500,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <p class="preco">R$ 450,00</p>
+      <button  class="btn" onclick="addToCart('Rastreador Veicular GPS', 450)">
+          Adicionar ao Carrinho
+      </button>
     </div>
+  </section>
+
+   <section class="carrinho">
+      <h2>Seu Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: R$ <span id="cart-total">0.00</span></strong></p>
+  </section>
+
+  <section class="carrinho">
+    <ul id="cart-items"></ul>
+    <button id="finalizarCompraBtn">Finalizar Compra</button>
   </section>
 
   <!-- ===== SCRIPT DE PESQUISA ===== -->
   
-  <script src="script.js"></script>
+  <script src="script-prod.js"></script>
 </body>
 </html>

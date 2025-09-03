@@ -18,6 +18,9 @@
       <a href="promoções.html">Promoções</a>
       <a href="contato.html">Contato</a>
     </nav>
+    <div class="cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
   </header>
 
   <!-- Banner -->
@@ -31,37 +34,59 @@
     <h2>Mais Vendidos</h2>
     <div class="grid">
 
-      <div class="card" data-name="farol led">
+    <div class="card" data-name="farol led">
       <img src="img/farol-led.jpg" alt="Farol de LED">
       <h3>Farol de LED</h3>
       <p class="preco">R$ 300,00</p>
-      <a href="#" class="btn">Comprar</a>
+      <button  class="btn" onclick="addToCart('Farol de LED', 300)">
+          Adicionar ao Carrinho
+      </button>
     </div>
 
-      <div class="card" data-name="Som Automotivo">
+    <div class="card" data-name="Som Automotivo">
         <img src="https://images.unsplash.com/photo-1616764576744-d07db25a1cce?w=600" alt="Som Automotivo">
         <h3>Kit Som Automotivo</h3>
-        <p class="preco">R$ 1.899,00</p>
-        <a href="#" class="btn">Comprar</a>
-      </div>
+        <p class="preco">R$ 764,15</p>
+        <button  class="btn" onclick="addToCart('Kit Som Automotivo', 764)">
+          Adicionar ao Carrinho
+        </button>
+    </div>
 
-      <div class="card" data-name="Volante Esportivo">
-        <img src="https://images.unsplash.com/photo-1599819149920-9465a5c8aaf1?w=600" alt="Volante Esportivo">
-        <h3>Volante Esportivo</h3>
-        <p class="preco">R$ 799,00</p>
-        <a href="#" class="btn">Comprar</a>
-      </div>
+    <div class="card" data-name="Volante Esportivo">
+      <img src="https://images.unsplash.com/photo-1599819149920-9465a5c8aaf1?w=600" alt="Volante Esportivo">
+      <h3>Volante Esportivo</h3>
+        <p class="preco">R$ 559,00</p>
+      <button  class="btn" onclick="addToCart('Volante Esportivo', 559)">
+        Adicionar ao Carrinho
+      </button>
+    </div>
 
-      <div class="card" data-name="alarme automotivo">
-        <img src="img/alarme.jpg" alt="Alarme Automotivo">
-        <h3>Alarme Automotivo</h3>
-        <p class="preco">R$ 350,00</p>
-        <a href="#" class="btn">Comprar</a>
-      </div>
+    <div class="card" data-name="alarme automotivo">
+      <img src="img/alarme.jpg" alt="Alarme Automotivo">
+      <h3>Alarme Automotivo</h3>
+      <p class="preco">R$ 350,00</p>
+      <button  class="btn" onclick="addToCart('Alarme Automotivo', 350)">
+          Adicionar ao Carrinho
+      </button>
     </div>
   </section>
+
+  <section class="carrinho">
+      <h2>Seu Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: R$ <span id="cart-total">0.00</span></strong></p>
+  </section>
+
+  <section class="carrinho">
+    <ul id="cart-items"></ul>
+    <button id="finalizarCompraBtn">Finalizar Compra</button>
+  </section>
+
     <footer class="footer">
     <p>© 2025 AutoParts. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script-inicio.js"></script>
+
 </body>
 </html>
