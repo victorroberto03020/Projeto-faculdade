@@ -144,6 +144,7 @@ nav ul li a:hover {
   overflow: hidden;
   text-align: center;
   position: relative;
+  margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -153,9 +154,10 @@ nav ul li a:hover {
 }
 
 .card img {
-  width: 100%;
+  width: 60%;
   height: 180px;
-  object-fit: cover;
+  padding: 10px;
+  object-fit: contain;
 }
 
 .card h3 {
